@@ -1,3 +1,9 @@
+# TETRIS GAME
+# By Nguyen Anh Do
+# My email: nguyenanhdo200213@gmail.com
+# 8/4/2021
+
+
 import os
 import sys
 import pygame
@@ -129,7 +135,7 @@ class Game:
         self.drawText(self.font_16, 'Your score:', GREEN, (W + 20, CS * 4))
         pygame.draw.rect(self.surface, RED, [W  + 20, T_SPACE + 20, 150, 50], 2)
         self.drawText(self.font_30, str(self.board.score), WHITE, (W + 30, T_SPACE + 28))
-
+ 
     def drawImages(self):
         tetrisLogo = pygame.transform.scale(pygame.image.load(os.path.join('imgs','tetris_logo.png')), (300, 50))
         self.surface.blit(tetrisLogo, (10, 30))
